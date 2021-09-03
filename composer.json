@@ -1,24 +1,25 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "tepuilabs/mercadopago-subscriptions",
+    "description": "This is my package MercadopagoSubscriptions",
     "keywords": [
-        ":vendor_name",
+        "tepuilabs",
         "laravel",
-        "package_slug"
+        "mercadopago-subscriptions"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/tepuilabs/mercadopago-subscriptions",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "angel cruz",
+            "email": "angel@tepuilabs.dev",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/contracts": "^8.37",
+        "spatie/laravel-package-tools": "^1.4.3"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
@@ -30,13 +31,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Tepuilabs\\MercadopagoSubscriptions\\": "src",
+            "Tepuilabs\\MercadopagoSubscriptions\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Tepuilabs\\MercadopagoSubscriptions\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Tepuilabs\\MercadopagoSubscriptions\\MercadopagoSubscriptionsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "MercadopagoSubscriptions": "Tepuilabs\\MercadopagoSubscriptions\\MercadopagoSubscriptionsFacade"
             }
         }
     },

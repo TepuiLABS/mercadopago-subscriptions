@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Tepuilabs\MercadopagoSubscriptions\Tests;
 
 class ExampleTest extends TestCase
 {

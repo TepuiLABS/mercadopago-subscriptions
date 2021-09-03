@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Tepuilabs\MercadopagoSubscriptions\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class MercadopagoSubscriptionsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'mercadopago-subscriptions';
 
     public $description = 'My command';
 
