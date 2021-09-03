@@ -4,7 +4,6 @@ namespace Tepuilabs\MercadopagoSubscriptions;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Tepuilabs\MercadopagoSubscriptions\Commands\MercadopagoSubscriptionsCommand;
 
 class MercadopagoSubscriptionsServiceProvider extends PackageServiceProvider
 {
