@@ -11,6 +11,6 @@ class MercadopagoSubscriptionsFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'mercadopago-subscriptions';
+        return 'MercadopagoSubscriptions';
     }
 }

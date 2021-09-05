@@ -17,4 +17,19 @@ class MercadopagoSubscriptionsServiceProvider extends PackageServiceProvider
         $package
             ->name('mercadopago-subscriptions');
     }
+
+    public function packageBooted()
+    {
+        $this
+            ->registerBindings();
+    }
+
+    protected function registerBindings(): self
+    {
+        $this->app->bind('MercadopagoSubscriptions', function($app){
+            return new \Tepuilabs\MercadopagoSubscriptions\MercadopagoSubscriptions;
+        });
+
+        return $this;
+    }
 }
