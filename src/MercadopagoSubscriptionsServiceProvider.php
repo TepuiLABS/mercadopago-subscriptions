@@ -26,7 +26,7 @@ class MercadopagoSubscriptionsServiceProvider extends PackageServiceProvider
 
     protected function registerBindings(): self
     {
-        $this->app->bind('MercadopagoSubscriptions', function($app){
+        $this->app->bind('MercadopagoSubscriptions', function() {
             return new \Tepuilabs\MercadopagoSubscriptions\MercadopagoSubscriptions;
         });
 
